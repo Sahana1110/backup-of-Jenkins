@@ -1,0 +1,10 @@
+# Exclude sensitive or unnecessary files
+secrets/
+credentials.xml
+identity.key.enc
+workspace/
+logs/
+*.log
+*.tmp
+*.bak
+

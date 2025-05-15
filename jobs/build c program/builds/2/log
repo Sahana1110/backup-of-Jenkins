@@ -1,0 +1,35 @@
+Started by user [8mha:////4OSBzE89nDd2e5BYXYTVNdk+jezMQrioJe2vXyyHj/cBAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL9koz83MRiAAB97I7BAAAA[0mTHOMAS
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/build c program
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/build c program/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/Sahana1110/jenkins.git # timeout=10
+Fetching upstream changes from https://github.com/Sahana1110/jenkins.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.47.1'
+ > git fetch --tags --force --progress -- https://github.com/Sahana1110/jenkins.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision c8c0f087fe551dc657bfec1c0613700c93b2cf7f (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c8c0f087fe551dc657bfec1c0613700c93b2cf7f # timeout=10
+Commit message: "initial commit with jenkins files"
+ > git rev-list --no-walk c8c0f087fe551dc657bfec1c0613700c93b2cf7f # timeout=10
+[build c program] $ /bin/sh -xe /tmp/jenkins54802747499791811.sh
++ make
+gcc -c main.c
+main.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    2 | main() {
+      | ^~~~
+main.c: In function ‘main’:
+main.c:3:9: warning: implicit declaration of function ‘biggest3’ [-Wimplicit-function-declaration]
+    3 |         biggest3();
+      |         ^~~~~~~~
+main.c:4:9: warning: implicit declaration of function ‘factorial’ [-Wimplicit-function-declaration]
+    4 |         factorial();
+      |         ^~~~~~~~~
+gcc -c big.c
+gcc -c fact.c
+gcc -o ABC.exe main.o big.o fact.o
+Finished: SUCCESS

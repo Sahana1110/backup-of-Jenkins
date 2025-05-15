@@ -1,0 +1,26 @@
+Started by user [8mha:////4OSBzE89nDd2e5BYXYTVNdk+jezMQrioJe2vXyyHj/cBAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL9koz83MRiAAB97I7BAAAA[0mTHOMAS
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/build c program
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/Sahana1110/jenkins.git
+ > git init /var/lib/jenkins/workspace/build c program # timeout=10
+Fetching upstream changes from https://github.com/Sahana1110/jenkins.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.47.1'
+ > git fetch --tags --force --progress -- https://github.com/Sahana1110/jenkins.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/Sahana1110/jenkins.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision c8c0f087fe551dc657bfec1c0613700c93b2cf7f (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c8c0f087fe551dc657bfec1c0613700c93b2cf7f # timeout=10
+Commit message: "initial commit with jenkins files"
+First time build. Skipping changelog.
+[build c program] $ /bin/sh -xe /tmp/jenkins13027458567232934300.sh
++ make clean
+make: *** No rule to make target 'clean'.  Stop.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
